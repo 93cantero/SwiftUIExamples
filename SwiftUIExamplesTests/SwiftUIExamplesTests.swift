@@ -1,9 +1,4 @@
-//
-//  SwiftUIExamplesTests.swift
-//  SwiftUIExamplesTests
-//
 //  Created by Cantero on 20/03/2021.
-//
 
 import XCTest
 @testable import SwiftUIExamples
