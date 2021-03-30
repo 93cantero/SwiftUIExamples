@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D801DB2026123AE500844A96 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB1F26123AE500844A96 /* Environment.swift */; };
+		D801DB2626123E6300844A96 /* Publishers+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB2526123E6300844A96 /* Publishers+Decoding.swift */; };
+		D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */; };
+		D801DB332612448E00844A96 /* URLHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB322612448E00844A96 /* URLHost.swift */; };
+		D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB372612510D00844A96 /* URLRequest+Networking.swift */; };
 		D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA3D26062EEC00123975 /* SwiftUIExamplesApp.swift */; };
 		D87ADA4026062EEC00123975 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA3F26062EEC00123975 /* MainListView.swift */; };
 		D87ADA4226062EF200123975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87ADA4126062EF200123975 /* Assets.xcassets */; };
@@ -17,6 +22,12 @@
 		D87ADA7F260639C600123975 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA7E260639C600123975 /* MenuRow.swift */; };
 		D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA8726063DCC00123975 /* ForEachExtensions.swift */; };
 		D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA9026063E1F00123975 /* ContentPreview.swift */; };
+		D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DE52613658B00049C2C /* NetworkingConstants.swift */; };
+		D8889DEB2613698A00049C2C /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DEA2613698A00049C2C /* EndpointType.swift */; };
+		D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DF626136CB800049C2C /* NetworkingClient.swift */; };
+		D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E0126136E4200049C2C /* NetworkingErrors.swift */; };
+		D8889E0B26136E9100049C2C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E0A26136E9100049C2C /* Configuration.swift */; };
+		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D801DB1F26123AE500844A96 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D801DB2526123E6300844A96 /* Publishers+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Decoding.swift"; sourceTree = "<group>"; };
+		D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+DataTaskPublisher.swift"; sourceTree = "<group>"; };
+		D801DB322612448E00844A96 /* URLHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHost.swift; sourceTree = "<group>"; };
+		D801DB372612510D00844A96 /* URLRequest+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Networking.swift"; sourceTree = "<group>"; };
 		D87ADA3A26062EEC00123975 /* SwiftUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87ADA3D26062EEC00123975 /* SwiftUIExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesApp.swift; sourceTree = "<group>"; };
 		D87ADA3F26062EEC00123975 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
@@ -53,6 +69,12 @@
 		D87ADA7E260639C600123975 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		D87ADA8726063DCC00123975 /* ForEachExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachExtensions.swift; sourceTree = "<group>"; };
 		D87ADA9026063E1F00123975 /* ContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreview.swift; sourceTree = "<group>"; };
+		D8889DE52613658B00049C2C /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		D8889DEA2613698A00049C2C /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		D8889DF626136CB800049C2C /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		D8889E0126136E4200049C2C /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
+		D8889E0A26136E9100049C2C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D801DB2426123E4400844A96 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				D801DB2526123E6300844A96 /* Publishers+Decoding.swift */,
+				D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */,
+			);
+			name = Publishers;
+			sourceTree = "<group>";
+		};
 		D87ADA3126062EEC00123975 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +134,8 @@
 		D87ADA3C26062EEC00123975 /* SwiftUIExamples */ = {
 			isa = PBXGroup;
 			children = (
+				D8889E0926136E7E00049C2C /* Configuration */,
+				D8BBCFF62611EEC600A9A6FE /* Core */,
 				D87ADA8F26063DDB00123975 /* SwiftUI Utils */,
 				D87ADA7D260639B100123975 /* Menu */,
 				D87ADA3F26062EEC00123975 /* MainListView.swift */,
@@ -156,6 +189,46 @@
 				D87ADA9026063E1F00123975 /* ContentPreview.swift */,
 			);
 			name = "SwiftUI Utils";
+			sourceTree = "<group>";
+		};
+		D8889DF526136A9000049C2C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D8889DF626136CB800049C2C /* NetworkingClient.swift */,
+				D8889E0126136E4200049C2C /* NetworkingErrors.swift */,
+				D8894F3126121D7000737855 /* Endpoint */,
+				D801DB2426123E4400844A96 /* Publishers */,
+				D801DB322612448E00844A96 /* URLHost.swift */,
+				D801DB372612510D00844A96 /* URLRequest+Networking.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D8889E0926136E7E00049C2C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D8889E0A26136E9100049C2C /* Configuration.swift */,
+				D801DB1F26123AE500844A96 /* Environment.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		D8894F3126121D7000737855 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				D8889DE52613658B00049C2C /* NetworkingConstants.swift */,
+				D8889DEA2613698A00049C2C /* EndpointType.swift */,
+				D8894F2B2611F66E00737855 /* Endpoint.swift */,
+			);
+			name = Endpoint;
+			sourceTree = "<group>";
+		};
+		D8BBCFF62611EEC600A9A6FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8889DF526136A9000049C2C /* Networking */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,12 +360,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8889DEB2613698A00049C2C /* EndpointType.swift in Sources */,
 				D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */,
+				D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */,
+				D8889E0B26136E9100049C2C /* Configuration.swift in Sources */,
+				D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */,
+				D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */,
 				D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */,
 				D87ADA6C2606314A00123975 /* MenuItem.swift in Sources */,
+				D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */,
+				D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */,
 				D87ADA7F260639C600123975 /* MenuRow.swift in Sources */,
 				D87ADA4026062EEC00123975 /* MainListView.swift in Sources */,
 				D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */,
+				D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */,
+				D801DB332612448E00844A96 /* URLHost.swift in Sources */,
+				D801DB2026123AE500844A96 /* Environment.swift in Sources */,
+				D801DB2626123E6300844A96 /* Publishers+Decoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
