@@ -29,6 +29,7 @@
 		D8889E0B26136E9100049C2C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E0A26136E9100049C2C /* Configuration.swift */; };
 		D8889E782614C2E800049C2C /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E772614C2E800049C2C /* AppRow.swift */; };
 		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
+		D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F0F7261B87D0001D403E /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		D8889E0A26136E9100049C2C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D8889E772614C2E800049C2C /* AppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
 		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D8E0F0F7261B87D0001D403E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				D8BBCFF62611EEC600A9A6FE /* Core */,
 				D87ADA8F26063DDB00123975 /* SwiftUI Utils */,
 				D87ADA7D260639B100123975 /* Menu */,
+				D8889EF82618DFA100049C2C /* Views */,
 				D87ADA3F26062EEC00123975 /* MainListView.swift */,
 				D87ADA3D26062EEC00123975 /* SwiftUIExamplesApp.swift */,
 				D87ADA4126062EF200123975 /* Assets.xcassets */,
@@ -214,6 +217,14 @@
 				D801DB1F26123AE500844A96 /* Environment.swift */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		D8889EF82618DFA100049C2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0F0F7261B87D0001D403E /* RatingView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		D8894F3126121D7000737855 /* Endpoint */ = {
@@ -369,6 +380,7 @@
 				D8889E0B26136E9100049C2C /* Configuration.swift in Sources */,
 				D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */,
 				D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */,
+				D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */,
 				D8889E782614C2E800049C2C /* AppRow.swift in Sources */,
 				D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */,
 				D87ADA6C2606314A00123975 /* MenuItem.swift in Sources */,
@@ -449,6 +461,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -510,6 +523,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -537,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExamples/Preview Content\"";
 				DEVELOPMENT_TEAM = 22C8A495ZU;
@@ -549,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cantero.example.SwiftUIExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExamples/Preview Content\"";
 				DEVELOPMENT_TEAM = 22C8A495ZU;
@@ -571,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cantero.example.SwiftUIExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
