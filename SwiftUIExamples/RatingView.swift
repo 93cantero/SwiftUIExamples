@@ -52,7 +52,7 @@ struct RatingView: View {
 }
 
 #if DEBUG
-private struct RatingView_Previews: PreviewProvider {
+struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             RatingView(rating: 3)

@@ -7,13 +7,8 @@ struct MenuRow: View {
     var item: MenuItem
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(item.rawValue)
-            Text(item.description)
-                .font(.caption)
-                .foregroundColor(.secondary)
-        }
-        .background(Color(.systemBackground))
+        VTitleAndDescriptionView(name: item.rawValue,
+                                 description: item.description)
     }
 }
 

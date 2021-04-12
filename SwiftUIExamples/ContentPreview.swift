@@ -43,5 +43,9 @@ extension View {
     func previewAsComponent() -> some View {
         ComponentPreview(component: self)
     }
+    
+    func previewAsSeparateColorSchemes() -> some View {
+        ComponentPreview(component: self, contentSizeCategories: [ContentSizeCategory.medium])
+    }
 }
 #endif
