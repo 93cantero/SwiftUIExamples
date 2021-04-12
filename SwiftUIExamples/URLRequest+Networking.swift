@@ -5,6 +5,7 @@ import Foundation
 extension URLRequest {
     
     mutating func add(parameters: JSONObject, with httpMethod: HTTPMethod) {
+        setValue("application/json", forHTTPHeaderField: "Content-Type")
         switch httpMethod {
         case .get: add(urlParameters: parameters)
         case .post: add(bodyParameters: parameters)

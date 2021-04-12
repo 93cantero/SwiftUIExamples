@@ -1,78 +1,82 @@
 // Created by Cantero on 31/03/2021.
 
 import SwiftUI
+import Combine
 
 struct AppRow: View {
+    @State var item: SearchItem
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(alignment: .top) {
-                Color.red
-                    .foregroundColor(Color(UIColor.label))
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                LogoImage(url: self.item.artworkUrl100)
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("App Name")
-                        .font(.body)
-                        .bold()
-                    Text("Description Descriptionasdasdadasd Descriptiosdsadn Description Description  Description Description Description")
-                        .font(.caption)
-                        .foregroundColor(Color(UIColor.secondaryLabel))
-                    HStack(alignment: .center, spacing: 8) {
-                        ForEach(values: 0...5) { _ in
-                            Image(systemName: "star.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 12, height: 12)
-                                .foregroundColor(Color.orange)
-                        }
-                        Text("(4.5)")
+                    VTitleAndDescriptionView(name: item.trackName, description: item.description)
+                    HStack(alignment: .center, spacing: 6) {
+                        RatingView(rating: Float(item.averageUserRating))
+                            .frame(height: 12)
+                        Text(String(format: "%.2f", item.averageUserRating))
                             .font(.caption2)
                             .foregroundColor(Color(UIColor.secondaryLabel))
                     }
                 }
                 .layoutPriority(1)
-                
-                
                 Spacer()
-                
-                Image(systemName: "icloud.and.arrow.down.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(.blue)
-                    .padding(.top, 12)
-                    .font(.caption)
-                    .frame(width: 25)
-                    .onTapGesture {
-                        print("Pressed download")
-                    }
             }
+            
+//            buildImageColumns(maximum: 3)
+//                .frame(height: 220)
             
             LazyVGrid(columns: [GridItem(.flexible()),
                              GridItem(.flexible()),
                              GridItem(.flexible())],
                       alignment: .center, spacing: 12) {
-                RoundedRectangle(cornerRadius: 5)
-                    .foregroundColor(.green)
-                    .frame(height: 250)
-                RoundedRectangle(cornerRadius: 5)
-                    .foregroundColor(.blue)
-                    .frame(height: 250)
-                RoundedRectangle(cornerRadius: 5)
-                    .foregroundColor(.yellow)
-                    .frame(height: 250)
+                CommonImage(url: self.item.screenshotUrls[0])
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .frame(height: 220)
+                CommonImage(url: self.item.screenshotUrls[1])
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .frame(height: 220)
+                CommonImage(url: self.item.screenshotUrls[2])
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .frame(height: 220)
             }
             .font(.body)
+//            .animation(.easeIn)
         }
         .padding()
         .background(Color(UIColor.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 25.0))
     }
-}
-
-struct AppRow_Previews: PreviewProvider {
-    static var previews: some View {
-        AppRow()
-            .frame(width: 375)
-            .previewAsComponent()
+    
+    func buildImageColumns(maximum: Int) -> some View {
+        var urls = self.item.screenshotUrls
+        if self.item.screenshotUrls.count >= maximum {
+            urls = Array(self.item.screenshotUrls[1...maximum])
+        }
+        
+        var columns: [GridItem] = []
+        var items: [CommonImage] = []
+        for url in urls {
+            columns.append(GridItem(.flexible()))
+            let image: CommonImage = CommonImage(url: url)
+//                .clipShape(RoundedRectangle(cornerRadius: 5))
+            items.append(image)
+        }
+        return LazyVGrid(columns: columns,
+                         alignment: .center, spacing: 12) {
+            ForEach(items, id: \.url) { item in
+                item
+                    .frame(height: 220)
+            }
+        }
     }
 }
+
+//struct AppRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AppRow(item: SearchItem(artworkUrl100: <#T##URL#>, averageUserRating: <#T##Double#>, description: <#T##String#>, formattedPrice: <#T##String#>, kind: <#T##SearchItemKind#>, trackName: <#T##String#>, version: <#T##String#>, screenshotUrls: <#T##[URL]#>))
+//            .frame(width: 375)
+//            .previewAsComponent()
+//    }
+//}

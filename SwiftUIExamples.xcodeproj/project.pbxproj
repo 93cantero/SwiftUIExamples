@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,7 +32,12 @@
 		D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E0126136E4200049C2C /* NetworkingErrors.swift */; };
 		D8889E0B26136E9100049C2C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E0A26136E9100049C2C /* Configuration.swift */; };
 		D8889E782614C2E800049C2C /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889E772614C2E800049C2C /* AppRow.swift */; };
+		D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */; };
+		D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */; };
 		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
+		D8BBCFF92611EEED00A9A6FE /* yelp_search_example.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBCFF82611EEED00A9A6FE /* yelp_search_example.json */; };
+		D8BBCFFE2611EF3200A9A6FE /* ItunesSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */; };
+		D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */; };
 		D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F0F7261B87D0001D403E /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +89,11 @@
 		D8889E0126136E4200049C2C /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
 		D8889E0A26136E9100049C2C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D8889E772614C2E800049C2C /* AppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
+		D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchView.swift; sourceTree = "<group>"; };
+		D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchViewModel.swift; sourceTree = "<group>"; };
 		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearch.swift; sourceTree = "<group>"; };
+		D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		D8E0F0F7261B87D0001D403E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +132,41 @@
 			name = Publishers;
 			sourceTree = "<group>";
 		};
+		D8782596261E1FE5003AF99A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D8782597261E1FFD003AF99A /* ItunesSearch */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		D8782597261E1FFD003AF99A /* ItunesSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D878259C261E205F003AF99A /* Data */,
+				D8782598261E2013003AF99A /* Models */,
+				D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */,
+				D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */,
+			);
+			name = ItunesSearch;
+			sourceTree = "<group>";
+		};
+		D8782598261E2013003AF99A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D878259C261E205F003AF99A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		D87ADA3126062EEC00123975 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +190,7 @@
 		D87ADA3C26062EEC00123975 /* SwiftUIExamples */ = {
 			isa = PBXGroup;
 			children = (
+				D8782596261E1FE5003AF99A /* Screens */,
 				D8889E0926136E7E00049C2C /* Configuration */,
 				D8BBCFF62611EEC600A9A6FE /* Core */,
 				D87ADA8F26063DDB00123975 /* SwiftUI Utils */,
@@ -391,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */,
 				D8889DEB2613698A00049C2C /* EndpointType.swift in Sources */,
 				D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */,
 				D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */,
@@ -399,6 +445,7 @@
 				D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */,
 				D8709D1026235AEA00A9C442 /* LogoImage.swift in Sources */,
 				D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */,
+				D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */,
 				D8889E782614C2E800049C2C /* AppRow.swift in Sources */,
 				D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */,
 				D8709D1526235F5900A9C442 /* CommonImage.swift in Sources */,
@@ -407,8 +454,10 @@
 				D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */,
 				D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */,
 				D87ADA7F260639C600123975 /* MenuRow.swift in Sources */,
+				D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */,
 				D87ADA4026062EEC00123975 /* MainListView.swift in Sources */,
 				D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */,
+				D8BBCFFE2611EF3200A9A6FE /* ItunesSearch.swift in Sources */,
 				D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */,
 				D801DB332612448E00844A96 /* URLHost.swift in Sources */,
 				D801DB2026123AE500844A96 /* Environment.swift in Sources */,

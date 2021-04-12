@@ -22,8 +22,14 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(menuItems) { item in
-                NavigationLink(destination: MenuDetail()) {
-                    MenuRow(item: item)
+                if case .appRow = item {
+                    NavigationLink(destination: ItunesSearchView()) {
+                        MenuRow(item: item)
+                    }
+                } else {
+                    NavigationLink(destination: MenuDetail()) {
+                        MenuRow(item: item)
+                    }
                 }
             }
             .navigationTitle("Menu")

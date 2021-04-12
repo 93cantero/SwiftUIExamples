@@ -6,7 +6,7 @@ import Combine
 extension JSONDecoder {
     static let snakeCaseConverting: JSONDecoder = {
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.keyDecodingStrategy = .useDefaultKeys
         decoder.dateDecodingStrategy = .iso8601
         return decoder
     }()
