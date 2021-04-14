@@ -4,7 +4,7 @@ import Foundation
 import Combine
 
 extension JSONDecoder {
-    static let snakeCaseConverting: JSONDecoder = {
+    static let useDefaultKeys: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .useDefaultKeys
         decoder.dateDecodingStrategy = .iso8601
@@ -15,7 +15,7 @@ extension JSONDecoder {
 extension Publisher where Output == Data {
     
     func decode<T: Decodable>(as type: T.Type = T.self,
-                              using decoder: JSONDecoder = .snakeCaseConverting) -> Publishers.Decode<Self, T, JSONDecoder> {
+                              using decoder: JSONDecoder = .useDefaultKeys) -> Publishers.Decode<Self, T, JSONDecoder> {
         decode(type: type, decoder: decoder)
     }
 }

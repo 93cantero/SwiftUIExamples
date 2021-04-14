@@ -2,8 +2,6 @@
 import SwiftUI
 import Kingfisher
 
-var cache: Set<String> = .init()
-
 struct CommonImage: View {
     var url: URL?
     

@@ -8,10 +8,10 @@ struct UserDefaultsKey {
 
 struct Configuration {
     
-    static var environment: Environment = {
+    static var environment: AppEnvironment = {
         guard let configuration = Bundle.main.object(forInfoDictionaryKey: UserDefaultsKey.configuration) as? String,
-            var env = Environment(rawValue: configuration)
-            else { return Environment.production }
+            var env = AppEnvironment(rawValue: configuration)
+            else { return AppEnvironment.production }
         
         return env
     }()

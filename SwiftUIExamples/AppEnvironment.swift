@@ -2,9 +2,9 @@
 
 import Foundation
 
-// protocol Environment and different Services implementation
+// protocol AppEnvironment and different Services implementation
 
-enum Environment: String {
+enum AppEnvironment: String {
     case production
     
     var host: URLHost {
@@ -13,7 +13,7 @@ enum Environment: String {
 }
 
 // MARK: Custom String Convertible
-extension Environment : CustomStringConvertible, CustomDebugStringConvertible {
+extension AppEnvironment : CustomStringConvertible, CustomDebugStringConvertible {
     var description: String {
         "PRODUCTION"
     }

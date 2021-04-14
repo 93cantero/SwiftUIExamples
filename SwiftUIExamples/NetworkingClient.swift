@@ -3,7 +3,13 @@
 import Foundation
 import Combine
 
-struct NetworkingClient {
+typealias NetworkModel = Identifiable & Decodable & Hashable
+
+protocol APIClient {
+    func request<K, R>(endpoint: Endpoint<K, R>, using requestData: K.RequestData) -> AnyPublisher<R, Error>
+}
+
+struct NetworkingClient: APIClient {
     var urlSession = URLSession.shared
     
     func request<K, R>(endpoint: Endpoint<K, R>, using requestData: K.RequestData) -> AnyPublisher<R, Error> {

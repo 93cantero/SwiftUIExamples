@@ -2,8 +2,6 @@
 
 import Foundation
 
-typealias NetworkModel = Identifiable & Decodable & Hashable
-
 struct SearchResult: Decodable {
     var resultCount: Int
     var results: [SearchItem]
