@@ -7,18 +7,22 @@ struct ItunesSearchView: View {
     @ObservedObject var viewModel: ItunesSearchViewModel = ItunesSearchViewModel()
     
     var body: some View {
-        cache = .init()
-        return ScrollView {
-            LazyVStack {
-                ForEach(viewModel.models) { item in
-                    AppRow(item: item)
-                }
+        VStack {
+            SearchBar(text: $viewModel.searchText) {
+                viewModel.cancelSearch()
             }
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.models) { item in
+                        AppRow(item: item)
+                    }
+                }
+                .animation(.easeIn(duration: 0.3))
+            }
+            .dismissKeyboardOnDrag()
+            .dismissKeyboardOnTap()
         }
         .navigationTitle("Itunes Search")
-        .onAppear {
-            viewModel.request()
-        }
     }
 }
 
