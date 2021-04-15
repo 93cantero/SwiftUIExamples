@@ -18,10 +18,9 @@ protocol SearchResultsRepositoryProtocol {
 }
 
 struct SearchResultsRepository: SearchResultsRepositoryProtocol {
-    
-    var urlSession = URLSession.shared
+    var client: APIClient = NetworkingClient()
     
     func loadResults(matching query: String) -> AnyPublisher<SearchResult, Error> {
-        urlSession.publisher(forEndpoint: .search(matching: query), using: ())
+        client.request(endpoint: .search(matching: query), using: ())
     }
 }

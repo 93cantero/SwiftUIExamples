@@ -6,6 +6,7 @@ import SwiftUI
 private struct Constants {
     static let color = Color.orange
     static let maxStarCount = 5
+    static let spacing: CGFloat = 4
 }
 
 private enum Star: String {
@@ -16,6 +17,7 @@ private enum Star: String {
 
 struct RatingView: View {
     let rating: Float
+    var spacing = Constants.spacing
     var color = Constants.color
     var maxNumOfStars = Constants.maxStarCount
     
@@ -30,7 +32,7 @@ struct RatingView: View {
     }
     
     var body: some View {
-        HStack {
+        HStack(spacing: spacing) {
             addStars(count: fullStarCount, starKind: .full)
             addStars(count: halfStarCount, starKind: .halfFull)
             addStars(count: emptyStarCount, starKind: .empty)
