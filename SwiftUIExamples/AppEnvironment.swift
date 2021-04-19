@@ -2,13 +2,15 @@
 
 import Foundation
 
-// protocol AppEnvironment and different Services implementation
-
 enum AppEnvironment: String {
     case production
     
     var host: URLHost {
         return .production
+    }
+    
+    var scheme: Scheme {
+        return .https
     }
 }
 

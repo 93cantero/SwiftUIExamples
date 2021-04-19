@@ -15,7 +15,7 @@ extension URLSession {
         return dataTaskPublisher(for: request)
             .validateStatusCode(in: 200...299)
             .map(\.data)
-            .decode()
+            .decode(using: decoder)
             .eraseToAnyPublisher()
     }
 }

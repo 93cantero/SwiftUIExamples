@@ -32,7 +32,6 @@ class ItunesSearchViewModel: ObservableObject {
         cancellable = repository
             .loadResults(matching: matching)
             .receive(on: DispatchQueue.main)
-            .map(\.results)
             .sink { completion in
                 switch completion {
                 case .finished:
@@ -48,6 +47,7 @@ class ItunesSearchViewModel: ObservableObject {
     
     private func subscribeToTextChanges() {
         textCancellable = $searchText
+            .dropFirst()
             .debounce(for: .milliseconds(.defaultAnimationMilliseconds), scheduler: RunLoop.main)
             .filter { !$0.isEmpty }
             .sink { text in
