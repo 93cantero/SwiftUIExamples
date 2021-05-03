@@ -12,8 +12,7 @@ class ItunesSearchViewModel: ObservableObject {
     @Published private(set) var models: [SearchItem] = []
     @Published var searchText: String = ""
     @Published var isLoading: Bool = false
-    private var textCancellable: AnyCancellable?
-    private var cancellable: AnyCancellable?
+    private var cancellables: [AnyCancellable] = []
     private let repository: SearchResultsRepositoryProtocol
     
     init(repository: SearchResultsRepositoryProtocol = SearchResultsRepository()) {
@@ -29,7 +28,7 @@ class ItunesSearchViewModel: ObservableObject {
     
     private func searchApps(matching: String) {
         isLoading = true
-        cancellable = repository
+        repository
             .loadResults(matching: matching)
             .receive(on: DispatchQueue.main)
             .sink { completion in
@@ -43,15 +42,15 @@ class ItunesSearchViewModel: ObservableObject {
                 self?.isLoading = false
                 self?.models = result
             }
+            .store(in: &cancellables)
     }
     
     private func subscribeToTextChanges() {
-        textCancellable = $searchText
+        $searchText
             .dropFirst()
             .debounce(for: .milliseconds(.defaultAnimationMilliseconds), scheduler: RunLoop.main)
             .filter { !$0.isEmpty }
-            .sink { text in
-                self.searchApps(matching: text)
-            }
+            .sink(receiveValue: searchApps)
+            .store(in: &cancellables)
     }
 }

@@ -29,18 +29,21 @@ class EndpointTests: XCTestCase {
         try XCTAssertEqual(request?.url, endpoint.expectedURL(path: path))
     }
     
-//    func test_GeneratingRequest_WithParameters() throws {
-//        // Given
-//        let path = "path/list"
-//        let endpoint = PublicEndpoint(path: path,
-//                                      parameters: ["key1": "value1",
-//                                                   "key2": "value2"])
-//        // When
-//        let request = endpoint.makeRequest()
-//
-//        //Then
-//        try XCTAssertEqual(request?.url, endpoint.expectedURL(path: "path/list?key1=value1&key2=value2"))
-//    }
+    func test_GeneratingRequest_WithParameters() throws {
+        // Given
+        let path = "path/list"
+        let endpoint = PublicEndpoint(path: path,
+                                      parameters: ["key1": "value1",
+                                                   "key2": "value2"])
+        // When
+        let request = endpoint.makeRequest()
+
+        //Then
+        let url = try XCTUnwrap(request?.url)
+        let query = try XCTUnwrap(URLComponents(url: url, resolvingAgainstBaseURL: true)?.query)
+        XCTAssertTrue(query.contains("key1=value1"))
+        XCTAssertTrue(query.contains("key2=value2"))
+    }
     
     func test_GeneratingPOSTRequest_WithParameters() throws {
         // Given
