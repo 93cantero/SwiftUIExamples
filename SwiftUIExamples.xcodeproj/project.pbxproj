@@ -12,6 +12,7 @@
 		D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */; };
 		D801DB332612448E00844A96 /* URLHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB322612448E00844A96 /* URLHost.swift */; };
 		D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB372612510D00844A96 /* URLRequest+Networking.swift */; };
+		D8320EC0262E3A68007A871B /* SeachResultsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8320EBF262E3A68007A871B /* SeachResultsViewModelTests.swift */; };
 		D8709D1026235AEA00A9C442 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D0F26235AEA00A9C442 /* LogoImage.swift */; };
 		D8709D1526235F5900A9C442 /* CommonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D1426235F5900A9C442 /* CommonImage.swift */; };
 		D8709D1B2623710000A9C442 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D8709D1A2623710000A9C442 /* Kingfisher */; };
@@ -21,12 +22,16 @@
 		D8709D3F262791B000A9C442 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D3E262791B000A9C442 /* UIApplicationExtensions.swift */; };
 		D8709D48262791F700A9C442 /* ScrollViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D47262791F700A9C442 /* ScrollViewExtensions.swift */; };
 		D8709D502627921000A9C442 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D4F2627921000A9C442 /* ViewExtensions.swift */; };
+		D8709D5E2628E52200A9C442 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D5D2628E52200A9C442 /* EndpointTests.swift */; };
+		D8709D632628EF2E00A9C442 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D622628EF2E00A9C442 /* MockURLProtocol.swift */; };
+		D8709D6B2628F1E700A9C442 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D6A2628F1E700A9C442 /* XCTestCaseExtension.swift */; };
+		D8709D732628F38800A9C442 /* MockErrorURLRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D722628F38800A9C442 /* MockErrorURLRequester.swift */; };
+		D8709D7B2628F3D400A9C442 /* SearchResultsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D7A2628F3D400A9C442 /* SearchResultsRepositoryTests.swift */; };
 		D87825A126235463003AF99A /* VTitleAndDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87825A026235463003AF99A /* VTitleAndDescriptionView.swift */; };
 		D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA3D26062EEC00123975 /* SwiftUIExamplesApp.swift */; };
 		D87ADA4026062EEC00123975 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA3F26062EEC00123975 /* MainListView.swift */; };
 		D87ADA4226062EF200123975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87ADA4126062EF200123975 /* Assets.xcassets */; };
 		D87ADA4526062EF200123975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87ADA4426062EF200123975 /* Preview Assets.xcassets */; };
-		D87ADA5026062EF200123975 /* SwiftUIExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA4F26062EF200123975 /* SwiftUIExamplesTests.swift */; };
 		D87ADA5B26062EF200123975 /* SwiftUIExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA5A26062EF200123975 /* SwiftUIExamplesUITests.swift */; };
 		D87ADA6C2606314A00123975 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA6B2606314A00123975 /* MenuItem.swift */; };
 		D87ADA7F260639C600123975 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA7E260639C600123975 /* MenuRow.swift */; };
@@ -41,8 +46,9 @@
 		D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */; };
 		D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */; };
 		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
-		D8BBCFFE2611EF3200A9A6FE /* ItunesSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */; };
+		D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */; };
 		D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */; };
+		D8CDE08726403F1900F39613 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDE08626403F1900F39613 /* Functions.swift */; };
 		D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F0F7261B87D0001D403E /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,7 @@
 		D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+DataTaskPublisher.swift"; sourceTree = "<group>"; };
 		D801DB322612448E00844A96 /* URLHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHost.swift; sourceTree = "<group>"; };
 		D801DB372612510D00844A96 /* URLRequest+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Networking.swift"; sourceTree = "<group>"; };
+		D8320EBF262E3A68007A871B /* SeachResultsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachResultsViewModelTests.swift; sourceTree = "<group>"; };
 		D8709D0F26235AEA00A9C442 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 		D8709D1426235F5900A9C442 /* CommonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonImage.swift; sourceTree = "<group>"; };
 		D8709D2326263A2200A9C442 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -77,6 +84,11 @@
 		D8709D3E262791B000A9C442 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		D8709D47262791F700A9C442 /* ScrollViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExtensions.swift; sourceTree = "<group>"; };
 		D8709D4F2627921000A9C442 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		D8709D5D2628E52200A9C442 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		D8709D622628EF2E00A9C442 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		D8709D6A2628F1E700A9C442 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		D8709D722628F38800A9C442 /* MockErrorURLRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockErrorURLRequester.swift; sourceTree = "<group>"; };
+		D8709D7A2628F3D400A9C442 /* SearchResultsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepositoryTests.swift; sourceTree = "<group>"; };
 		D87825A026235463003AF99A /* VTitleAndDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTitleAndDescriptionView.swift; sourceTree = "<group>"; };
 		D87ADA3A26062EEC00123975 /* SwiftUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87ADA3D26062EEC00123975 /* SwiftUIExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesApp.swift; sourceTree = "<group>"; };
@@ -85,7 +97,6 @@
 		D87ADA4426062EF200123975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D87ADA4626062EF200123975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D87ADA4B26062EF200123975 /* SwiftUIExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87ADA4F26062EF200123975 /* SwiftUIExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesTests.swift; sourceTree = "<group>"; };
 		D87ADA5126062EF200123975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D87ADA5626062EF200123975 /* SwiftUIExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87ADA5A26062EF200123975 /* SwiftUIExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesUITests.swift; sourceTree = "<group>"; };
@@ -103,8 +114,9 @@
 		D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchView.swift; sourceTree = "<group>"; };
 		D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchViewModel.swift; sourceTree = "<group>"; };
 		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearch.swift; sourceTree = "<group>"; };
+		D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchResult.swift; sourceTree = "<group>"; };
 		D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
+		D8CDE08626403F1900F39613 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D8E0F0F7261B87D0001D403E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +153,23 @@
 				D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */,
 			);
 			name = Publishers;
+			sourceTree = "<group>";
+		};
+		D8320EC7262E3AF5007A871B /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				D8709D7A2628F3D400A9C442 /* SearchResultsRepositoryTests.swift */,
+				D8320EBF262E3A68007A871B /* SeachResultsViewModelTests.swift */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		D8320ECB26400C61007A871B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8709D5D2628E52200A9C442 /* EndpointTests.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		D8709D222626390300A9C442 /* SearchBar */ = {
@@ -187,6 +216,17 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		D8709D542628E37C00A9C442 /* Test Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8CDE08626403F1900F39613 /* Functions.swift */,
+				D8709D6A2628F1E700A9C442 /* XCTestCaseExtension.swift */,
+				D8709D622628EF2E00A9C442 /* MockURLProtocol.swift */,
+				D8709D722628F38800A9C442 /* MockErrorURLRequester.swift */,
+			);
+			path = "Test Utils";
+			sourceTree = "<group>";
+		};
 		D8782596261E1FE5003AF99A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +249,7 @@
 		D8782598261E2013003AF99A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D8BBCFFD2611EF3200A9A6FE /* ItunesSearch.swift */,
+				D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -270,7 +310,9 @@
 		D87ADA4E26062EF200123975 /* SwiftUIExamplesTests */ = {
 			isa = PBXGroup;
 			children = (
-				D87ADA4F26062EF200123975 /* SwiftUIExamplesTests.swift */,
+				D8320ECB26400C61007A871B /* Core */,
+				D8320EC7262E3AF5007A871B /* SearchResults */,
+				D8709D542628E37C00A9C442 /* Test Utils */,
 				D87ADA5126062EF200123975 /* Info.plist */,
 			);
 			path = SwiftUIExamplesTests;
@@ -520,7 +562,7 @@
 				D87ADA4026062EEC00123975 /* MainListView.swift in Sources */,
 				D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */,
 				D8709D502627921000A9C442 /* ViewExtensions.swift in Sources */,
-				D8BBCFFE2611EF3200A9A6FE /* ItunesSearch.swift in Sources */,
+				D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */,
 				D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */,
 				D801DB332612448E00844A96 /* URLHost.swift in Sources */,
 				D801DB2026123AE500844A96 /* AppEnvironment.swift in Sources */,
@@ -532,7 +574,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87ADA5026062EF200123975 /* SwiftUIExamplesTests.swift in Sources */,
+				D8709D7B2628F3D400A9C442 /* SearchResultsRepositoryTests.swift in Sources */,
+				D8709D732628F38800A9C442 /* MockErrorURLRequester.swift in Sources */,
+				D8320EC0262E3A68007A871B /* SeachResultsViewModelTests.swift in Sources */,
+				D8CDE08726403F1900F39613 /* Functions.swift in Sources */,
+				D8709D6B2628F1E700A9C442 /* XCTestCaseExtension.swift in Sources */,
+				D8709D5E2628E52200A9C442 /* EndpointTests.swift in Sources */,
+				D8709D632628EF2E00A9C442 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

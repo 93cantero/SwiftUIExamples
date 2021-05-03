@@ -4,7 +4,7 @@ import Foundation
 
 extension URLRequest {
     
-    mutating func add(parameters: JSONObject, with httpMethod: HTTPMethod) {
+    mutating func add(parameters: JSON, with httpMethod: HTTPMethod) {
         setValue("application/json", forHTTPHeaderField: "Content-Type")
         switch httpMethod {
         case .get: add(urlParameters: parameters)
@@ -12,7 +12,7 @@ extension URLRequest {
         }
     }
     
-    mutating func add(bodyParameters params: JSONObject) {
+    mutating func add(bodyParameters params: JSON) {
         do {
             httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
         } catch let error {
@@ -20,7 +20,7 @@ extension URLRequest {
         }
     }
     
-    mutating func add(urlParameters parameters: JSONObject) {
+    mutating func add(urlParameters parameters: JSON) {
         let queryItems = parameters.toQueryItems()
         var components = URLComponents(url: url!, resolvingAgainstBaseURL: false)!
         if !queryItems.isEmpty {
@@ -34,7 +34,7 @@ extension URLRequest {
     }
 }
 
-private extension JSONObject {
+private extension JSON {
     
     func toQueryItems() -> [URLQueryItem] {
         compactMap { param -> URLQueryItem? in

@@ -3,7 +3,7 @@
 import Foundation
 
 typealias RequestParameters = [String: String]
-typealias JSONObject = [String: Any]
+typealias JSON = [String: Any]
 
 enum TimeOutInterval: TimeInterval {
     case regular = 30

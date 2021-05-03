@@ -3,10 +3,16 @@
 import Foundation
 import Combine
 
-typealias NetworkModel = Identifiable & Decodable & Hashable
+typealias NetworkModel = Identifiable & Codable & Hashable
 
 protocol APIClient {
     func request<K, R>(endpoint: Endpoint<K, R>, using requestData: K.RequestData) -> AnyPublisher<R, Error>
+}
+
+extension APIClient {
+    func request<K, R>(endpoint: Endpoint<K, R>) -> AnyPublisher<R, Error> where K.RequestData == () {
+        request(endpoint: endpoint, using: ())
+    }
 }
 
 struct NetworkingClient: APIClient {

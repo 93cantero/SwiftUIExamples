@@ -2,12 +2,12 @@
 
 import Foundation
 
-struct SearchResult: Decodable {
+struct SearchResult: Codable {
     var resultCount: Int
     var results: [SearchItem]
 }
 
-enum SearchItemKind: String, Decodable {
+enum SearchItemKind: String, Codable {
     case software
 }
 

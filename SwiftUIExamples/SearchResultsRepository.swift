@@ -14,13 +14,16 @@ private extension Endpoint where Kind == EndpointKinds.Public, Response == Searc
 }
 
 protocol SearchResultsRepositoryProtocol {
-    func loadResults(matching query: String) -> AnyPublisher<SearchResult, Error>
+    func loadResults(matching query: String) -> AnyPublisher<[SearchItem], Error>
 }
 
 struct SearchResultsRepository: SearchResultsRepositoryProtocol {
     var client: APIClient = NetworkingClient()
     
-    func loadResults(matching query: String) -> AnyPublisher<SearchResult, Error> {
-        client.request(endpoint: .search(matching: query), using: ())
+    func loadResults(matching query: String) -> AnyPublisher<[SearchItem], Error> {
+        client
+            .request(endpoint: .search(matching: query))
+            .map(\.results)
+            .eraseToAnyPublisher()
     }
 }
