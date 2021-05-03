@@ -7,10 +7,10 @@ struct VTitleAndDescriptionView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(name)
+            Text(LocalizedStringKey(name))
                 .font(.body)
                 .bold()
-            Text(description)
+            Text(LocalizedStringKey(description))
                 .font(.caption)
                 .lineLimit(3)
                 .foregroundColor(Color(UIColor.secondaryLabel))

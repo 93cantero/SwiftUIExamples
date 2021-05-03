@@ -7,13 +7,13 @@ fileprivate struct RestrictSizeCategory: ViewModifier {
 
     @ViewBuilder
     func body(content: Content) -> some View {
-            if sizeCategory > ContentSizeCategory.extraExtraExtraLarge {
-                content.transformEnvironment(\.sizeCategory) { value in
-                    value = ContentSizeCategory.extraExtraExtraLarge
-                }
-            } else {
-                content
+        if sizeCategory > ContentSizeCategory.extraExtraExtraLarge {
+            content.transformEnvironment(\.sizeCategory) { value in
+                value = ContentSizeCategory.extraExtraExtraLarge
             }
+        } else {
+            content
+        }
     }
 }
 

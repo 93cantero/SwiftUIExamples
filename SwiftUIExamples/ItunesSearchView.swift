@@ -22,13 +22,14 @@ struct ItunesSearchView: View {
             .dismissKeyboardOnDrag()
             .dismissKeyboardOnTap()
         }
-        .navigationTitle("Itunes Search")
+        .navigationTitle("ITUNES_SEARCH_TITLE")
     }
 }
 
 #if DEBUG
 struct ItunesSearchView_Previews: PreviewProvider {
     static var previews: some View {
+
         ItunesSearchView()
             .frame(width: 375)
             .previewAsComponent()
