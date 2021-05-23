@@ -12,13 +12,8 @@ private class SearchResultRepositoryMock: SearchResultsRepositoryProtocol {
     func loadResults(matching query: String) -> AnyPublisher<[SearchItem], Error> {
         loadResultsQuery = query
         switch result {
-        case .success(let value):
-            return Just(value)
-                .setFailureType(to: Error.self)
-                .eraseToAnyPublisher()
-        case .failure(let err):
-            return Fail(error: err)
-                .eraseToAnyPublisher()
+        case .success(let value): return .just(value)
+        case .failure(let err): return .fail(err)
         }
     }
 }
