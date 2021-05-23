@@ -53,9 +53,6 @@ class SearchResultsRepositoryTests: XCTestCase {
         XCTAssertThrowsError(try awaitCompletion(of: publisher))
     }
     
-    // Test that is calling the correct endpoint
-    // Test SearchViewModel
-    
     private func assertEqualItem(result: SearchItem, expected: SearchItem, file: StaticString = #filePath, line: UInt = #line) {
         XCTAssertEqual(result.artworkUrl100, expected.artworkUrl100, file: file, line: line)
         XCTAssertEqual(result.averageUserRating, expected.averageUserRating, file: file, line: line)

@@ -17,7 +17,7 @@ struct SearchBar: View {
                     .foregroundColor(.gray)
                     .restrictSizeCategory()
                 
-                TextField("Search ...", text: $text)
+                TextField("SEARCH_BAR_TITLE", text: $text)
                     .disableAutocorrection(true)
                     .onTapGesture {
                         withAnimation {
@@ -26,14 +26,7 @@ struct SearchBar: View {
                     }
 
                 if isEditing {
-                    Button(action: {
-                        text = ""
-                    }) {
-                        Image(systemName: "multiply.circle.fill")
-                            .foregroundColor(.gray)
-                            .padding(.trailing, 8)
-                    }
-                    .restrictSizeCategory()
+                    makeClearButton()
                 }
             }
             .padding(7)
@@ -42,25 +35,46 @@ struct SearchBar: View {
             .padding(.horizontal)
             
             if isEditing {
-                Button("Cancel") {
-                    text = ""
-                    withAnimation {
-                        isEditing = false
-                    }
-                    UIApplication.shared.endEditing()
-                    onCancel?()
-                }
-                .padding(.trailing)
-                .transition(.move(edge: .trailing))
+                makeCancelButton()
             }
         }
     }
 }
+
+extension SearchBar {
+    
+    func makeClearButton() -> some View {
+        Button(action: {
+            text = ""
+        }) {
+            Image(systemName: "multiply.circle.fill")
+                .foregroundColor(.gray)
+                .padding(.trailing, 8)
+        }
+        .restrictSizeCategory()
+    }
+    
+    func makeCancelButton() -> some View {
+        Button("SEARCH_BAR_BUTTON_CANCEL") {
+            text = ""
+            withAnimation {
+                isEditing = false
+            }
+            UIApplication.shared.endEditing()
+            onCancel?()
+        }
+        .padding(.trailing)
+        .transition(.move(edge: .trailing))
+    }
+}
+
+// MARK: - Previews
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
         SearchBar(text: .mock(""))
             .frame(width: 375)
             .previewAsComponent()
+            .translated(to: .es)
     }
 }

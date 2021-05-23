@@ -1,0 +1,20 @@
+/*
+ Created by Cantero on 03/05/2021.
+ */
+
+/* Search Bar */
+
+"SEARCH_BAR_TITLE" = "Buscar...";
+"SEARCH_BAR_BUTTON_CANCEL" = "Cancelar";
+
+/* iTunes Search screen */
+
+"ITUNES_SEARCH_TITLE" = "Búsqueda en iTunes";
+
+/* Home screen */
+
+"HOME_SCREEN_TITLE" = "Menú";
+"MENU_FIRST_ITEM_TITLE" = "Primer elemento";
+"MENU_APP_ROW_ITEM_TITLE" = "iTunes Apps";
+"MENU_FIRST_ITEM_DESCRIPTION" = "Este es el primer elemento de la lista";
+"MENU_APP_ROW_ITEM_DESCRIPTION" = "Muestra una lista de apps como resultado de una búsqueda";
