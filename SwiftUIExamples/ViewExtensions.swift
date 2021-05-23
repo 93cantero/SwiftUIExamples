@@ -4,8 +4,6 @@ import SwiftUI
 
 extension View {
     func dismissKeyboardOnTap() -> some View {
-        self.onTapGesture {
-            UIApplication.shared.endEditing()
-        }
+        self.onTapGesture(perform: UIApplication.shared.endEditing)
     }
 }

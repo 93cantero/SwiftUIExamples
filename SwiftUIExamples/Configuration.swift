@@ -6,7 +6,7 @@ struct UserDefaultsKey {
     static let configuration : String = "Configuration"
 }
 
-struct Configuration {
+enum Configuration {
     
     static var environment: AppEnvironment = {
         guard let configuration = Bundle.main.object(forInfoDictionaryKey: UserDefaultsKey.configuration) as? String,

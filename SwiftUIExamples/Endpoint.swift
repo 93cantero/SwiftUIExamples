@@ -32,7 +32,7 @@ extension Endpoint {
         
         print("------------------- REQUEST ----------------------------")
         print(request)
-        print(request.allHTTPHeaderFields)
+        print(request.allHTTPHeaderFields as Any)
         return request
     }
     
