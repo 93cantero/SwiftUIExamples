@@ -3,11 +3,27 @@
 import SwiftUI
 
 struct MenuDetail: View {
+    
+    @EnvironmentObject var modalManager: ModalManager
+    @EnvironmentObject var snackManager: SnackManager
+    
     var body: some View {
         ScrollView {
             VStack {
                 Spacer()
+                ModalAnchorView()
                 Text("Detail")
+                VStack {
+                    Button("Open Modal") {
+//                        self.modalManager.openModal()
+                        self.snackManager.newSnack(data: .success)
+                    }
+                }
+                .onAppear {
+                    self.modalManager.newModal(position: .closed) {
+                        Text("Modal Content")
+                    }
+                }
                 Spacer()
             }
         }
@@ -18,6 +34,7 @@ struct MenuDetail: View {
 struct MainListView: View {
     
     var menuItems = MenuItem.allCases
+    @StateObject var snackManager = SnackManager()
     
     var body: some View {
         NavigationView {
@@ -29,6 +46,9 @@ struct MainListView: View {
             .navigationTitle("Menu")
             .listStyle(GroupedListStyle())
         }
+        .environmentObject(snackManager)
+        .banner(data: $snackManager.data, show: $snackManager.display)
+        .environmentObject(ModalManager())
     }
 }
 

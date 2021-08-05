@@ -38,6 +38,7 @@
 		D87ADA7F260639C600123975 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA7E260639C600123975 /* MenuRow.swift */; };
 		D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA8726063DCC00123975 /* ForEachExtensions.swift */; };
 		D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADA9026063E1F00123975 /* ContentPreview.swift */; };
+		D887F502266FFC1000A72705 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D887F501266FFC1000A72705 /* SnackBar.swift */; };
 		D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DE52613658B00049C2C /* NetworkingConstants.swift */; };
 		D8889DEB2613698A00049C2C /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DEA2613698A00049C2C /* EndpointType.swift */; };
 		D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889DF626136CB800049C2C /* NetworkingClient.swift */; };
@@ -47,6 +48,10 @@
 		D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */; };
 		D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */; };
 		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
+		D8A489D926ACA338002FF336 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A489D826ACA338002FF336 /* PrimaryButton.swift */; };
+		D8AB2478266D55090036E4A6 /* ModalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB2477266D55090036E4A6 /* ModalState.swift */; };
+		D8AB2480266D55F50036E4A6 /* ModalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB247F266D55F50036E4A6 /* ModalManager.swift */; };
+		D8AB2485266D56360036E4A6 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB2484266D56360036E4A6 /* ModalView.swift */; };
 		D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */; };
 		D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */; };
 		D8CDE08726403F1900F39613 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDE08626403F1900F39613 /* Functions.swift */; };
@@ -110,6 +115,7 @@
 		D87ADA7E260639C600123975 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		D87ADA8726063DCC00123975 /* ForEachExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachExtensions.swift; sourceTree = "<group>"; };
 		D87ADA9026063E1F00123975 /* ContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreview.swift; sourceTree = "<group>"; };
+		D887F501266FFC1000A72705 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
 		D8889DE52613658B00049C2C /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		D8889DEA2613698A00049C2C /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		D8889DF626136CB800049C2C /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
@@ -119,6 +125,10 @@
 		D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchView.swift; sourceTree = "<group>"; };
 		D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchViewModel.swift; sourceTree = "<group>"; };
 		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D8A489D826ACA338002FF336 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		D8AB2477266D55090036E4A6 /* ModalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalState.swift; sourceTree = "<group>"; };
+		D8AB247F266D55F50036E4A6 /* ModalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalManager.swift; sourceTree = "<group>"; };
+		D8AB2484266D56360036E4A6 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchResult.swift; sourceTree = "<group>"; };
 		D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		D8CDE08626403F1900F39613 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 		D8709D2F26277C6600A9C442 /* View Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				D8A489D826ACA338002FF336 /* PrimaryButton.swift */,
 				D8CDE0BE2640682700F39613 /* OverrideLocale.swift */,
 				D8709D3026277C7C00A9C442 /* RestrictSizeCategory.swift */,
 			);
@@ -357,6 +368,14 @@
 			name = "SwiftUI Utils";
 			sourceTree = "<group>";
 		};
+		D887F500266FFC0600A72705 /* Snack Bar */ = {
+			isa = PBXGroup;
+			children = (
+				D887F501266FFC1000A72705 /* SnackBar.swift */,
+			);
+			name = "Snack Bar";
+			sourceTree = "<group>";
+		};
 		D8889DF526136A9000049C2C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +401,8 @@
 		D8889EF82618DFA100049C2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D887F500266FFC0600A72705 /* Snack Bar */,
+				D8AB2476266D54F20036E4A6 /* Modal Sheet */,
 				D8709D2F26277C6600A9C442 /* View Modifiers */,
 				D8709D222626390300A9C442 /* SearchBar */,
 				D8889E772614C2E800049C2C /* AppRow.swift */,
@@ -401,6 +422,16 @@
 				D8894F2B2611F66E00737855 /* Endpoint.swift */,
 			);
 			name = Endpoint;
+			sourceTree = "<group>";
+		};
+		D8AB2476266D54F20036E4A6 /* Modal Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB2477266D55090036E4A6 /* ModalState.swift */,
+				D8AB247F266D55F50036E4A6 /* ModalManager.swift */,
+				D8AB2484266D56360036E4A6 /* ModalView.swift */,
+			);
+			name = "Modal Sheet";
 			sourceTree = "<group>";
 		};
 		D8BBCFF62611EEC600A9A6FE /* Core */ = {
@@ -572,19 +603,23 @@
 				D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */,
 				D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */,
 				D8889E0B26136E9100049C2C /* Configuration.swift in Sources */,
+				D887F502266FFC1000A72705 /* SnackBar.swift in Sources */,
 				D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */,
 				D8709D3F262791B000A9C442 /* UIApplicationExtensions.swift in Sources */,
 				D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */,
 				D8709D1026235AEA00A9C442 /* LogoImage.swift in Sources */,
+				D8AB2485266D56360036E4A6 /* ModalView.swift in Sources */,
 				D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */,
 				D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */,
 				D8889E782614C2E800049C2C /* AppRow.swift in Sources */,
 				D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */,
 				D8709D1526235F5900A9C442 /* CommonImage.swift in Sources */,
 				D87825A126235463003AF99A /* VTitleAndDescriptionView.swift in Sources */,
+				D8A489D926ACA338002FF336 /* PrimaryButton.swift in Sources */,
 				D8709D2426263A2200A9C442 /* SearchBar.swift in Sources */,
 				D87ADA6C2606314A00123975 /* MenuItem.swift in Sources */,
 				D8CDE0B6264067EA00F39613 /* LocaleExtensions.swift in Sources */,
+				D8AB2478266D55090036E4A6 /* ModalState.swift in Sources */,
 				D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */,
 				D8709D3926277CC100A9C442 /* BindingExtensions.swift in Sources */,
 				D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */,
@@ -594,6 +629,7 @@
 				D87ADA4026062EEC00123975 /* MainListView.swift in Sources */,
 				D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */,
 				D8709D502627921000A9C442 /* ViewExtensions.swift in Sources */,
+				D8AB2480266D55F50036E4A6 /* ModalManager.swift in Sources */,
 				D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */,
 				D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */,
 				D801DB332612448E00844A96 /* URLHost.swift in Sources */,
