@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E200039272F0E09005206AA /* PurchaseDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E200038272F0E09005206AA /* PurchaseDescriptionView.swift */; };
+		5E20003B272F0E34005206AA /* PurchaseDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20003A272F0E34005206AA /* PurchaseDescriptionViewModel.swift */; };
+		5E20003D272F0E92005206AA /* PurchaseHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20003C272F0E92005206AA /* PurchaseHeaderViewModel.swift */; };
 		D801DB2026123AE500844A96 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB1F26123AE500844A96 /* AppEnvironment.swift */; };
 		D801DB2626123E6300844A96 /* Publishers+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB2526123E6300844A96 /* Publishers+Decoding.swift */; };
 		D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */; };
@@ -14,6 +17,13 @@
 		D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801DB372612510D00844A96 /* URLRequest+Networking.swift */; };
 		D8318A19265A7471009E9FD9 /* PublisherUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8318A18265A7471009E9FD9 /* PublisherUtils.swift */; };
 		D8320EC0262E3A68007A871B /* SeachResultsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8320EBF262E3A68007A871B /* SeachResultsViewModelTests.swift */; };
+		D837D83126BC3F4F0099E354 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837D83026BC3F4F0099E354 /* PurchaseView.swift */; };
+		D837D83926BC50D80099E354 /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837D83826BC50D80099E354 /* PurchaseHeaderView.swift */; };
+		D837D83E26BC50FD0099E354 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837D83D26BC50FD0099E354 /* PriceView.swift */; };
+		D864B15126E9322A00C186B0 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864B15026E9322A00C186B0 /* TotalView.swift */; };
+		D864B15626E938AC00C186B0 /* PurchaseAdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864B15526E938AC00C186B0 /* PurchaseAdditionView.swift */; };
+		D864B15E26EB6DB800C186B0 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864B15D26EB6DB800C186B0 /* PaymentView.swift */; };
+		D864B16326EB704B00C186B0 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864B16226EB704B00C186B0 /* ColorExtensions.swift */; };
 		D8709D1026235AEA00A9C442 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D0F26235AEA00A9C442 /* LogoImage.swift */; };
 		D8709D1526235F5900A9C442 /* CommonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8709D1426235F5900A9C442 /* CommonImage.swift */; };
 		D8709D1B2623710000A9C442 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D8709D1A2623710000A9C442 /* Kingfisher */; };
@@ -47,6 +57,8 @@
 		D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */; };
 		D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */; };
 		D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8894F2B2611F66E00737855 /* Endpoint.swift */; };
+		D8AFD1F026EBDF0A005A1D8D /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AFD1EF26EBDF0A005A1D8D /* LineView.swift */; };
+		D8AFD1F626EBDF63005A1D8D /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AFD1F526EBDF63005A1D8D /* PurchaseViewModel.swift */; };
 		D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */; };
 		D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */; };
 		D8CDE08726403F1900F39613 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CDE08626403F1900F39613 /* Functions.swift */; };
@@ -74,6 +86,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E200038272F0E09005206AA /* PurchaseDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDescriptionView.swift; sourceTree = "<group>"; };
+		5E20003A272F0E34005206AA /* PurchaseDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDescriptionViewModel.swift; sourceTree = "<group>"; };
+		5E20003C272F0E92005206AA /* PurchaseHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderViewModel.swift; sourceTree = "<group>"; };
 		D801DB1F26123AE500844A96 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		D801DB2526123E6300844A96 /* Publishers+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Decoding.swift"; sourceTree = "<group>"; };
 		D801DB2D26123F6800844A96 /* URLSession+DataTaskPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+DataTaskPublisher.swift"; sourceTree = "<group>"; };
@@ -81,6 +96,13 @@
 		D801DB372612510D00844A96 /* URLRequest+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Networking.swift"; sourceTree = "<group>"; };
 		D8318A18265A7471009E9FD9 /* PublisherUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherUtils.swift; sourceTree = "<group>"; };
 		D8320EBF262E3A68007A871B /* SeachResultsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachResultsViewModelTests.swift; sourceTree = "<group>"; };
+		D837D83026BC3F4F0099E354 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		D837D83826BC50D80099E354 /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
+		D837D83D26BC50FD0099E354 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		D864B15026E9322A00C186B0 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		D864B15526E938AC00C186B0 /* PurchaseAdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseAdditionView.swift; sourceTree = "<group>"; };
+		D864B15D26EB6DB800C186B0 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		D864B16226EB704B00C186B0 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		D8709D0F26235AEA00A9C442 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 		D8709D1426235F5900A9C442 /* CommonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonImage.swift; sourceTree = "<group>"; };
 		D8709D2326263A2200A9C442 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -119,6 +141,8 @@
 		D8889EF22618DDDE00049C2C /* ItunesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchView.swift; sourceTree = "<group>"; };
 		D8889EF92618DFC600049C2C /* ItunesSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchViewModel.swift; sourceTree = "<group>"; };
 		D8894F2B2611F66E00737855 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D8AFD1EF26EBDF0A005A1D8D /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		D8AFD1F526EBDF63005A1D8D /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
 		D8BBCFFD2611EF3200A9A6FE /* ItunesSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchResult.swift; sourceTree = "<group>"; };
 		D8BBD0032611F1F800A9A6FE /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		D8CDE08626403F1900F39613 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -181,6 +205,20 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		D837D82F26BC3E8C0099E354 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				D8AFD1F426EBDF52005A1D8D /* Header */,
+				D837D83026BC3F4F0099E354 /* PurchaseView.swift */,
+				D8AFD1F526EBDF63005A1D8D /* PurchaseViewModel.swift */,
+				D837D83D26BC50FD0099E354 /* PriceView.swift */,
+				D864B15026E9322A00C186B0 /* TotalView.swift */,
+				D864B15526E938AC00C186B0 /* PurchaseAdditionView.swift */,
+				D864B15D26EB6DB800C186B0 /* PaymentView.swift */,
+			);
+			name = Purchase;
+			sourceTree = "<group>";
+		};
 		D8709D222626390300A9C442 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +261,7 @@
 				D8709D3826277CC100A9C442 /* BindingExtensions.swift */,
 				D8709D47262791F700A9C442 /* ScrollViewExtensions.swift */,
 				D8709D4F2627921000A9C442 /* ViewExtensions.swift */,
+				D864B16226EB704B00C186B0 /* ColorExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +281,7 @@
 		D8782596261E1FE5003AF99A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D837D82F26BC3E8C0099E354 /* Purchase */,
 				D8782597261E1FFD003AF99A /* ItunesSearch */,
 			);
 			name = Screens;
@@ -389,6 +429,7 @@
 				D87825A026235463003AF99A /* VTitleAndDescriptionView.swift */,
 				D8709D0F26235AEA00A9C442 /* LogoImage.swift */,
 				D8709D1426235F5900A9C442 /* CommonImage.swift */,
+				D8AFD1EF26EBDF0A005A1D8D /* LineView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -401,6 +442,17 @@
 				D8894F2B2611F66E00737855 /* Endpoint.swift */,
 			);
 			name = Endpoint;
+			sourceTree = "<group>";
+		};
+		D8AFD1F426EBDF52005A1D8D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D837D83826BC50D80099E354 /* PurchaseHeaderView.swift */,
+				5E20003C272F0E92005206AA /* PurchaseHeaderViewModel.swift */,
+				5E200038272F0E09005206AA /* PurchaseDescriptionView.swift */,
+				5E20003A272F0E34005206AA /* PurchaseDescriptionViewModel.swift */,
+			);
+			name = Header;
 			sourceTree = "<group>";
 		};
 		D8BBCFF62611EEC600A9A6FE /* Core */ = {
@@ -569,13 +621,19 @@
 				D8889EFA2618DFC600049C2C /* ItunesSearchViewModel.swift in Sources */,
 				D8709D48262791F700A9C442 /* ScrollViewExtensions.swift in Sources */,
 				D8889DEB2613698A00049C2C /* EndpointType.swift in Sources */,
+				D837D83926BC50D80099E354 /* PurchaseHeaderView.swift in Sources */,
 				D87ADA9126063E1F00123975 /* ContentPreview.swift in Sources */,
 				D8889E0226136E4200049C2C /* NetworkingErrors.swift in Sources */,
+				5E20003B272F0E34005206AA /* PurchaseDescriptionViewModel.swift in Sources */,
 				D8889E0B26136E9100049C2C /* Configuration.swift in Sources */,
 				D8894F2C2611F66E00737855 /* Endpoint.swift in Sources */,
 				D8709D3F262791B000A9C442 /* UIApplicationExtensions.swift in Sources */,
 				D801DB2E26123F6800844A96 /* URLSession+DataTaskPublisher.swift in Sources */,
+				D8AFD1F626EBDF63005A1D8D /* PurchaseViewModel.swift in Sources */,
+				D837D83E26BC50FD0099E354 /* PriceView.swift in Sources */,
+				D864B15126E9322A00C186B0 /* TotalView.swift in Sources */,
 				D8709D1026235AEA00A9C442 /* LogoImage.swift in Sources */,
+				D864B15E26EB6DB800C186B0 /* PaymentView.swift in Sources */,
 				D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */,
 				D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */,
 				D8889E782614C2E800049C2C /* AppRow.swift in Sources */,
@@ -584,16 +642,22 @@
 				D87825A126235463003AF99A /* VTitleAndDescriptionView.swift in Sources */,
 				D8709D2426263A2200A9C442 /* SearchBar.swift in Sources */,
 				D87ADA6C2606314A00123975 /* MenuItem.swift in Sources */,
+				5E20003D272F0E92005206AA /* PurchaseHeaderViewModel.swift in Sources */,
 				D8CDE0B6264067EA00F39613 /* LocaleExtensions.swift in Sources */,
 				D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */,
 				D8709D3926277CC100A9C442 /* BindingExtensions.swift in Sources */,
+				5E200039272F0E09005206AA /* PurchaseDescriptionView.swift in Sources */,
+				D864B16326EB704B00C186B0 /* ColorExtensions.swift in Sources */,
+				D8AFD1F026EBDF0A005A1D8D /* LineView.swift in Sources */,
 				D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */,
 				D8709D3126277C7D00A9C442 /* RestrictSizeCategory.swift in Sources */,
+				D864B15626E938AC00C186B0 /* PurchaseAdditionView.swift in Sources */,
 				D87ADA7F260639C600123975 /* MenuRow.swift in Sources */,
 				D8BBD0042611F1F800A9A6FE /* SearchResultsRepository.swift in Sources */,
 				D87ADA4026062EEC00123975 /* MainListView.swift in Sources */,
 				D87ADA3E26062EEC00123975 /* SwiftUIExamplesApp.swift in Sources */,
 				D8709D502627921000A9C442 /* ViewExtensions.swift in Sources */,
+				D837D83126BC3F4F0099E354 /* PurchaseView.swift in Sources */,
 				D8BBCFFE2611EF3200A9A6FE /* ItunesSearchResult.swift in Sources */,
 				D8889DE62613658B00049C2C /* NetworkingConstants.swift in Sources */,
 				D801DB332612448E00844A96 /* URLHost.swift in Sources */,

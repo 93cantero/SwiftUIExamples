@@ -18,3 +18,5 @@
 "MENU_APP_ROW_ITEM_TITLE" = "iTunes Apps";
 "MENU_FIRST_ITEM_DESCRIPTION" = "This is the first item of the list";
 "MENU_APP_ROW_ITEM_DESCRIPTION" = "Displays a list of apps as a result of a search";
+"PURCHASE_APP_ROW_TITLE" = "Product Payment";
+"PURCHASE_APP_ROW_DESCRIPTION" = "Screen that simulates a product payment screen";
