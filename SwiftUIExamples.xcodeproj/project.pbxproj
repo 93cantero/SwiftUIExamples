@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1DEA2927397D3B004B5EA1 /* LocalizedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DEA2827397D3B004B5EA1 /* LocalizedString+Extensions.swift */; };
+		5E1DEA2B27397F72004B5EA1 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DEA2A27397F72004B5EA1 /* ArrowButton.swift */; };
 		5E200039272F0E09005206AA /* PurchaseDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E200038272F0E09005206AA /* PurchaseDescriptionView.swift */; };
 		5E20003B272F0E34005206AA /* PurchaseDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20003A272F0E34005206AA /* PurchaseDescriptionViewModel.swift */; };
 		5E20003D272F0E92005206AA /* PurchaseHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20003C272F0E92005206AA /* PurchaseHeaderViewModel.swift */; };
@@ -86,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E1DEA2827397D3B004B5EA1 /* LocalizedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedString+Extensions.swift"; sourceTree = "<group>"; };
+		5E1DEA2A27397F72004B5EA1 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 		5E200038272F0E09005206AA /* PurchaseDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDescriptionView.swift; sourceTree = "<group>"; };
 		5E20003A272F0E34005206AA /* PurchaseDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDescriptionViewModel.swift; sourceTree = "<group>"; };
 		5E20003C272F0E92005206AA /* PurchaseHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderViewModel.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 		D8709D46262791DF00A9C442 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5E1DEA2827397D3B004B5EA1 /* LocalizedString+Extensions.swift */,
 				D87ADA8726063DCC00123975 /* ForEachExtensions.swift */,
 				D8709D3826277CC100A9C442 /* BindingExtensions.swift */,
 				D8709D47262791F700A9C442 /* ScrollViewExtensions.swift */,
@@ -424,12 +429,13 @@
 			children = (
 				D8709D2F26277C6600A9C442 /* View Modifiers */,
 				D8709D222626390300A9C442 /* SearchBar */,
+				5E1DEA2A27397F72004B5EA1 /* ArrowButton.swift */,
 				D8889E772614C2E800049C2C /* AppRow.swift */,
-				D8E0F0F7261B87D0001D403E /* RatingView.swift */,
-				D87825A026235463003AF99A /* VTitleAndDescriptionView.swift */,
-				D8709D0F26235AEA00A9C442 /* LogoImage.swift */,
 				D8709D1426235F5900A9C442 /* CommonImage.swift */,
 				D8AFD1EF26EBDF0A005A1D8D /* LineView.swift */,
+				D8709D0F26235AEA00A9C442 /* LogoImage.swift */,
+				D8E0F0F7261B87D0001D403E /* RatingView.swift */,
+				D87825A026235463003AF99A /* VTitleAndDescriptionView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				D8E0F0F8261B87D0001D403E /* RatingView.swift in Sources */,
 				D8889EF32618DDDE00049C2C /* ItunesSearchView.swift in Sources */,
 				D8889E782614C2E800049C2C /* AppRow.swift in Sources */,
+				5E1DEA2B27397F72004B5EA1 /* ArrowButton.swift in Sources */,
 				D87ADA8826063DCC00123975 /* ForEachExtensions.swift in Sources */,
 				D8709D1526235F5900A9C442 /* CommonImage.swift in Sources */,
 				D87825A126235463003AF99A /* VTitleAndDescriptionView.swift in Sources */,
@@ -647,6 +654,7 @@
 				D801DB382612510D00844A96 /* URLRequest+Networking.swift in Sources */,
 				D8709D3926277CC100A9C442 /* BindingExtensions.swift in Sources */,
 				5E200039272F0E09005206AA /* PurchaseDescriptionView.swift in Sources */,
+				5E1DEA2927397D3B004B5EA1 /* LocalizedString+Extensions.swift in Sources */,
 				D864B16326EB704B00C186B0 /* ColorExtensions.swift in Sources */,
 				D8AFD1F026EBDF0A005A1D8D /* LineView.swift in Sources */,
 				D8889DF726136CB800049C2C /* NetworkingClient.swift in Sources */,

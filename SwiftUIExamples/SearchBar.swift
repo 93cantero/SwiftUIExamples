@@ -16,8 +16,7 @@ struct SearchBar: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                     .restrictSizeCategory()
-                
-                TextField("SEARCH_BAR_TITLE", text: $text)
+                TextField("SEARCH_BAR_TITLE".localized, text: $text)
                     .disableAutocorrection(true)
                     .onTapGesture {
                         withAnimation {

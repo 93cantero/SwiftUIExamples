@@ -14,22 +14,12 @@ struct PurchaseHeaderView: View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
                 HStack(alignment: .top) {
-                    VStack(alignment: .leading) {
-                        Text(viewModel.title)
-                            .font(.body)
-                        Text(viewModel.date)
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                            .lineLimit(3)
-                            .truncationMode(/*@START_MENU_TOKEN@*/.middle/*@END_MENU_TOKEN@*/)
-                            .minimumScaleFactor(0.7)
-                    }
-                    
+                    VTitleAndDescriptionView(name: viewModel.title,
+                                             description: viewModel.date)
                     Spacer()
                     PriceView()
                 }
                 .padding()
-                
                 
                 PurchaseDescriptionView(opened: opened)
             }
@@ -44,21 +34,10 @@ struct PurchaseHeaderView: View {
                     }
                 }
                 
-                Button(action: {
-                    withAnimation {
-                        opened.toggle()
-                    }
-                }) {
-                    Image(systemName: "arrow.up")
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundColor(.white)
-                        .padding(.all, 6)
-                        .rotationEffect(.degrees(rotationDegrees))
-                }
-                .background(Color.green)
-                .clipShape(Circle())
-                .frame(width: 24, height: 24, alignment: .center)
+                ArrowButton(opened: $opened)
+                    .background(Color.green)
+                    .clipShape(Circle())
+                    .frame(width: 24, height: 24, alignment: .center)
             }
         }
     }

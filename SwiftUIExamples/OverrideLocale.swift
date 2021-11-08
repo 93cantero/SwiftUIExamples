@@ -5,8 +5,6 @@ import SwiftUI
 extension View {
     
     func translated(to locale: Locale) -> some View {
-        return self.transformEnvironment(\.locale) { value in
-            value = locale
-        }
+        self.environment(\.locale, locale)
     }
 }
